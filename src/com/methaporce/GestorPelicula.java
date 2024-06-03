@@ -1,4 +1,6 @@
-package com.methaporce.modelo;
+package com.methaporce;
+
+import com.methaporce.modelo.Pelicula;
 
 import java.util.ArrayList;
 import java.util.Iterator;

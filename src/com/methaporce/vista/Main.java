@@ -1,6 +1,6 @@
 package com.methaporce.vista;
 
-import com.methaporce.modelo.GestorPelicula;
+import com.methaporce.GestorPelicula;
 import com.methaporce.modelo.Pelicula;
 //Creamos Clase Main. Punto de entrada de la aplicación.
 public class Main {

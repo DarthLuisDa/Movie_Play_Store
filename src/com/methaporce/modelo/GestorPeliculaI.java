@@ -1,6 +1,4 @@
-package com.methaporce;
-
-import com.methaporce.modelo.Pelicula;
+package com.methaporce.modelo;
 
 import java.util.List;
 

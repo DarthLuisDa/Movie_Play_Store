@@ -7,8 +7,9 @@ import java.util.List;
 //Creación de Interface que representa un gestor de películas.
 public interface GestorPeliculaI {
 
+    //Metodos
     //Agregar Película
-    void agregarPelicula(Pelicula pelicula);
+    void agregarPelicula(Pelicula pelicula); //Primero es el tipo de tu parametro y luego es el nombre del objeto
 
     //Eliminar Película
     void eliminarPelicula(int id);
@@ -24,4 +25,5 @@ public interface GestorPeliculaI {
 
     //Marcar una película como disponible con su ID
     void marcarPeliculaComoDisponible(int id);
+
 }

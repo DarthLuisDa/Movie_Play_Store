@@ -24,15 +24,15 @@ public class Pelicula {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Integer id) {   //No se impleneta porque no agregamos por ID
         this.id = id;                 //SET: para colocar
     }
 
-    public String getNombre() {
+    public String getNombre() {      //No se implementa porque no obtenemos por Nombre
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre) {    //No se implementa porque no agregamos por Nombre
         this.nombre = nombre;
     }
 
@@ -44,7 +44,9 @@ public class Pelicula {
         this.disponible = disponible;
     }
 
+
     //Se genera el toString(), para retornar los atributos de la lista dependiendo del método que se ponga en función.
+    //Se muestra imprimiendolo con el System.out.println, en la clase Main.
     @Override
     public String toString() {
         return "Pelicula{" +
@@ -54,5 +56,6 @@ public class Pelicula {
                 '}';
     }
 }
+
 
 

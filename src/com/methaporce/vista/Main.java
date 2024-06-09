@@ -12,6 +12,7 @@ public class Main {
         //Lista de Peliculas con sus tres atributos.
         Pelicula pelicula1 = new Pelicula(1, "EL Señor de los Anillos", true);
         //Para imprimir todas las peliculas, agregamos una por una al GestorPelicula.
+        //Utilizando el método agregarPelicula implementado en la clase GestorPelicula
         gestorPelicula.agregarPelicula(pelicula1);
         Pelicula pelicula2 = new Pelicula(2, "Harry Potter", true);
         gestorPelicula.agregarPelicula(pelicula2);
@@ -32,6 +33,21 @@ public class Main {
         Pelicula pelicula10 = new Pelicula(10, "Sherk", false);
         gestorPelicula.agregarPelicula(pelicula10);
 
+        //Agregar pelicula 11
+        Pelicula pelicula11 = new Pelicula(11,"Cars",true);
+        gestorPelicula.agregarPelicula(pelicula11);
+        System.out.println();                                                   //Línea para salto
+        System.out.println("<<<<<------------------------------------------------------------>>>>>");
+        System.out.println("<<<<<------  Agregamos película 11 al listado de películas ------>>>>>");
+        System.out.println("<<<<<------------------------------------------------------------>>>>>");
+
+        //Agregar pelicula 12
+        Pelicula pelicula12 = new Pelicula(12,"La Era de Hielo",true);
+        gestorPelicula.agregarPelicula(pelicula12);
+        System.out.println();
+        System.out.println("<<<<<------------------------------------------------------------>>>>>");
+        System.out.println("<<<<<------  Agregamos película 12 al listado de películas ------>>>>>");
+        System.out.println("<<<<<------------------------------------------------------------>>>>>");
 
         // Imprimir lista de todas las películas.
         System.out.println(); //Renglón vacío para separar
@@ -39,6 +55,8 @@ public class Main {
         System.out.println("<<<<<-------------  Lista de todas las películas  --------------->>>>>"); //Leyenda a Imprimir
         System.out.println("<<<<<------------------------------------------------------------>>>>>");
         gestorPelicula.obtenerPeliculas().forEach(pelicula -> System.out.println(pelicula.toString()));
+        //Se obtiene todas las peliculas disponibles. Se mandan a llamar todas juntas con forEach y se muestran(imprimen)
+        //todas con los atributos puestos en el to string (), cadena de texto.
 
         // Imprimir películas disponibles.
         System.out.println();
@@ -74,8 +92,9 @@ public class Main {
         System.out.println("<<<<<---  Marcar la película con identificador 8 como activa  --->>>>>");
         System.out.println("<<<<<------------------------------------------------------------>>>>>");
         gestorPelicula.marcarPeliculaComoDisponible(8);
-        System.out.println(pelicula8.toString());
+        System.out.println(pelicula8.toString());   //Imprimir la marcada
 
+        //Nota: En todos los Print hay que hacerlos con ln para que nos de el salto de linea
 
     }
 }
